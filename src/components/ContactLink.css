@@ -1,0 +1,62 @@
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px 5px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Klinic Slab', sans-serif;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  box-shadow: var(--shadow);
+
+  img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+
+  span {
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover {
+    background: transparent;
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+    transform: none;
+    box-shadow: none;
+
+    img {
+      opacity: 1;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-button {
+    padding: 6px 8px;
+    font-size: 13px;
+    width: auto;
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

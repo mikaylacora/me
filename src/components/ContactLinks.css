@@ -1,0 +1,14 @@
+.contact-links {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

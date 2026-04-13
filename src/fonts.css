@@ -1,0 +1,71 @@
+/* KlinicSlab Font Family */
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url('./assets/fonts/KlinicSlabLight.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url('./assets/fonts/KlinicSlabLightIt.otf');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url('./assets/fonts/KlinicSlabBook.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url('./assets/fonts/KlinicSlabBookIt.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url('./assets/fonts/KlinicSlabMedium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url('./assets/fonts/KlinicSlabMediumIt.otf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url('./assets/fonts/KlinicSlabBold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url('./assets/fonts/KlinicSlabBoldIt.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Sour Gummy Variable Font Family */
+@font-face {
+  font-family: 'Sour Gummy';
+  src: url('./assets/fonts/SourGummy-VariableFont_wdth,wght.ttf');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sour Gummy';
+  src: url('./assets/fonts/SourGummy-Italic-VariableFont_wdth,wght.ttf');
+  font-weight: 100 900;
+  font-style: italic;
+}

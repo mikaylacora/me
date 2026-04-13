@@ -1,0 +1,75 @@
+
+#header {
+  width: 100%;
+  padding: 40px 20px;
+  /* background-image: "src/assets/header.png"; */
+
+  h1 {
+    font-size: 50px;
+    margin: 0;
+    color: var(--text);
+    text-align: left;
+    font-family: 'Klinic Slab', sans-serif;
+    font-weight: 200;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin: 0;
+    color: var(--muted-text);
+    text-align: left;
+    font-family: 'Klinic Slab', sans-serif;
+    font-weight: 200;
+  }
+}
+
+#header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex: 0 0 auto;
+}
+
+#me {
+  flex: 0 0 auto;
+
+  .photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+}
+
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--muted-text);
+  font-family: 'Klinic Slab', sans-serif;
+}
