@@ -5,7 +5,7 @@ interface Project {
   id: string
   name: string
   description: string
-  tech: string[]
+  technologies: string[]
   link?: string
   bullets: string[]
 }
@@ -24,7 +24,7 @@ export default function Projects({ projects }: ProjectsProps) {
           title={project.name}
           subtitle=""
           bullets={project.bullets}
-          tech={project.tech}
+          technologies={project.technologies}
           link={project.link}
         />
       ))}

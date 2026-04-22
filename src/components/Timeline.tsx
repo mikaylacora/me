@@ -7,7 +7,7 @@ interface TimelineJob {
   title: string
   company: string
   bullets: string[]
-  tech?: string[]
+  technologies?: string[]
 }
 
 interface TimelineProps {
@@ -26,7 +26,7 @@ export default function Timeline({ jobs }: TimelineProps) {
             title={job.title}
             subtitle={job.company}
             bullets={job.bullets}
-            tech={job.tech}
+            technologies={job.technologies}
           />
         </div>
       ))}

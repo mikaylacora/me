@@ -86,7 +86,7 @@ function App() {
       id: '1',
       name: 'Portfolio Website',
       description: 'Personal portfolio website built with React and TypeScript, featuring a responsive timeline and project showcase.',
-      tech: ['React', 'TypeScript', 'Vite', 'CSS'],
+      technologies: ['React', 'TypeScript', 'Vite', 'CSS'],
       link: 'https://github.com/mikaylacora/me',
       bullets: [
         'Built with React 19, TypeScript, and Vite for fast development and hot module reloading.',

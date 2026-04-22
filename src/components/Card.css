@@ -1,6 +1,6 @@
 
 
-.timeline-card {
+.card {
   background: var(--muted-bg);
   padding: 20px;
   border-radius: 8px;
@@ -15,7 +15,7 @@
   }
 }
 
-.timeline-date {
+.date {
   font-size: 14px;
   color: var(--accent);
   font-weight: 600;
@@ -24,48 +24,65 @@
   letter-spacing: 0.5px;
 }
 
-.timeline-title {
+.title {
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 4px 0;
   color: var(--text);
 }
 
-.timeline-company {
+.company {
   font-size: 14px;
   margin: 0 0 12px 0;
   color: var(--muted-text);
   font-weight: 500;
 }
 
-.timeline-description {
+.bullets {
+  margin: 0;
+  padding: 0 0 0 18px;
+  list-style: disc;
+}
+
+.bullets li {
   font-size: 14px;
   line-height: 1.6;
   color: var(--text);
-  margin: 0;
+  margin-bottom: 4px;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 14px 0;
+}
+
+.tech-tag {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover {
+  opacity: 0.7;
 }
 
 /* Responsive design for mobile */
 @media (max-width: 768px) {
-  .timeline-line {
-    left: 20px;
-  }
 
-  .timeline-item {
-    margin-bottom: 40px;
-
-
-    padding-left: 70px;
-    padding-right: 0;
-    text-align: left;
-
-    .timeline-marker {
-      left: 8px;
-    }
-
-    .timeline-card {
-      margin: 0;
-      width: calc(100% - 70px);
-    }
-  }
 }
