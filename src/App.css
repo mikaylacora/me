@@ -1,6 +1,7 @@
 
 #header {
   width: 100%;
+  max-width: 1126px;
   padding: 40px 20px;
   /* background-image: "src/assets/header.png"; */
 
@@ -28,8 +29,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1126px;
   margin: 0 auto;
 }
 
