@@ -1,25 +1,18 @@
-import { useState } from 'react'
 import meImg from './assets/me.png'
 import Timeline from './components/Timeline'
 import Projects from './components/Projects'
-import Tabs from './components/Tabs'
 import ContactLinks from './components/ContactLinks'
 import './App.css'
 
 function App() {
-  const [activeTab, setActiveTab] = useState('experience')
 
-  const tabs = [
-    { id: 'experience', label: 'Experience' },
-    { id: 'projects', label: 'Projects' },
-  ]
-
-  const jobs = [
+  const experiences = [
     {
       id: '1',
-      date: 'May 2023 - Feb 2023',
+      date: 'May 2023 - Feb 2026',
       title: 'Software Engineer',
       company: 'CLICS',
+      technologies: ['Ruby on Rails', 'Angular', 'TypeScript', 'PostgreSQL', 'RSpec', 'Sidekiq', 'Third-Party Integrations'],
       bullets: [
         'Designed, built, and maintained Ruby on Rails RESTful APIs supporting full-stack workflows across client-facing production systems, third-party integrations, and real-time data synchronization.',
         'Owned end-to-end development and deployment of a cross-platform application (Angular, Ionic), building modular TypeScript components, user-facing features, and responsive layout improvements across devices',
@@ -34,7 +27,7 @@ function App() {
     },
     {
       id: '2',
-      date: 'January 2022 – April 2023',
+      date: 'January 2022 - April 2023',
       title: 'Android Mobile Developer',
       company: 'TIAA',
       bullets: [
@@ -45,7 +38,7 @@ function App() {
     },
     {
       id: '3',
-      date: 'January 2021 – January 2022',
+      date: 'January 2021 - January 2022',
       title: 'Technical Associate Website Developer',
       company: 'TIAA',
       bullets: [
@@ -56,7 +49,7 @@ function App() {
     },
     {
       id: '4',
-      date: 'June 2020 – July 2020',
+      date: 'June 2020 - July 2020',
       title: 'Software Engineer Intern',
       company: 'Allstate Roadside',
       bullets: [
@@ -65,7 +58,7 @@ function App() {
     },
     {
       id: '5',
-      date: 'May 2019 – August 2019',
+      date: 'May 2019 - August 2019',
       title: 'Process Engineering Intern',
       company: 'Cree-Wolfspeed',
       bullets: [
@@ -78,6 +71,18 @@ function App() {
       title: 'B.S. in Computer Engineering',
       company: 'North Carolina State University',
       bullets: []
+    },
+    {
+      id: '7',
+      date: 'July 2018 - May 2020',
+      title: 'Resident Adviser',
+      company: 'North Carolina State University Housing',
+      bullets: [
+        'Used communication skills to build personal relationships and trust with residents.',
+        'Developed and coordinated educational programs for residents.',
+        'Ensured a safe and inclusive living environment for all.',
+        'Mediated interpersonal problems between residents.'
+      ]
     }
   ]
 
@@ -89,11 +94,32 @@ function App() {
       technologies: ['React', 'TypeScript', 'Vite', 'CSS'],
       link: 'https://github.com/mikaylacora/me',
       bullets: [
-        'Built with React 19, TypeScript, and Vite for fast development and hot module reloading.',
+        'Built with React 19, TypeScript, and Vite. Chosen specifically to expand knowledge of modern web development tools.',
         'Responsive design with CSS custom properties supporting light and dark color schemes.',
         'Timeline component for displaying work experience with interactive hover states.',
       ]
     },
+    {
+      id: '2',
+      name: 'Eco-tracking Bathroom',
+      description: 'Senior Design',
+      technologies: ['C', 'Embedded C', 'Hardware'],
+      bullets: [
+        'Designed, planned, and prototyped a system of devices to track water usage within a bathroom and report live to consumers, focused on implementing in a hotel environment.',
+        'Created a manager application in C through QT platform.',
+        'Managed team deadlines and maintained communication with project sponsor.'
+      ]
+    },
+    {
+      id: '3',
+      name: 'RC and Self-Driving Car',
+      description: 'Embedded Systems Class',
+      technologies: ['Embedded C'],
+      bullets: [
+        'Created and programmed, in embedded C, a model car over the course of a semester.',
+        'Worked through issues encountered and learned debugging practices.'
+      ]
+    }
   ]
 
   return (
@@ -116,7 +142,7 @@ function App() {
       <section id="content">
         <section id="Experience">
           <h2>Experience</h2>
-          <Timeline jobs={jobs} />
+          <Timeline experiences={experiences} />
         </section>
         <section id="Projects">
           <Projects projects={projects} />

@@ -11,12 +11,13 @@
   font-weight: 500;
   border: none;
   border-bottom: 2px solid transparent;
-  border-radius: 20px;
   transition: all 0.2s ease;
   cursor: pointer;
   width: 100%;
   position: relative;
   box-shadow: var(--shadow);
+  background: var(--muted-bg);
+  border-radius: 12px;
 
   img {
     width: 16px;

@@ -37,7 +37,7 @@ export default function Card({date, title, subtitle, bullets, technologies, link
           rel="noopener noreferrer"
           className="link"
         >
-          View →
+          View Github →
         </a>
       )}
     </div>

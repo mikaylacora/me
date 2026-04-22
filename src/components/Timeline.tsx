@@ -1,7 +1,7 @@
 import Card from './Card'
 import './Timeline.css'
 
-interface TimelineJob {
+interface TimelineExperience {
   id: string
   date: string
   title: string
@@ -11,22 +11,22 @@ interface TimelineJob {
 }
 
 interface TimelineProps {
-  jobs: TimelineJob[]
+  experiences: TimelineExperience[]
 }
 
-export default function Timeline({ jobs }: TimelineProps) {
+export default function Timeline({ experiences }: TimelineProps) {
   return (
     <div className="timeline-container">
       <div className="timeline-line"></div>
-      {jobs.map((job) => (
-        <div key={job.id} className="timeline-item">
+      {experiences.map((experience) => (
+        <div key={experience.id} className="timeline-item">
           <div className="timeline-marker"></div>
           <Card
-            date={job.date}
-            title={job.title}
-            subtitle={job.company}
-            bullets={job.bullets}
-            technologies={job.technologies}
+            date={experience.date}
+            title={experience.title}
+            subtitle={experience.company}
+            bullets={experience.bullets}
+            technologies={experience.technologies}
           />
         </div>
       ))}
