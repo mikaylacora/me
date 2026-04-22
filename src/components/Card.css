@@ -1,0 +1,71 @@
+
+
+.timeline-card {
+  background: var(--muted-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.timeline-date {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.timeline-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: var(--text);
+}
+
+.timeline-company {
+  font-size: 14px;
+  margin: 0 0 12px 0;
+  color: var(--muted-text);
+  font-weight: 500;
+}
+
+.timeline-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-item {
+    margin-bottom: 40px;
+
+
+    padding-left: 70px;
+    padding-right: 0;
+    text-align: left;
+
+    .timeline-marker {
+      left: 8px;
+    }
+
+    .timeline-card {
+      margin: 0;
+      width: calc(100% - 70px);
+    }
+  }
+}
