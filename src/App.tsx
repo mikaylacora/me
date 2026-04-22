@@ -84,8 +84,8 @@ function App() {
   const projects = [
     {
       id: '1',
-      name: 'Portfolio Website',
-      description: 'Personal portfolio website built with React and TypeScript, featuring a responsive timeline and project showcase.',
+      name: 'This Website',
+      description: 'Personal portfolio website built with React and TypeScript, featuring a timeline and project showcase.',
       technologies: ['React', 'TypeScript', 'Vite', 'CSS'],
       link: 'https://github.com/mikaylacora/me',
       bullets: [
@@ -114,17 +114,13 @@ function App() {
       </section>
 
       <section id="content">
-        <Tabs tabs={tabs} activeTab={activeTab} onTabChange={setActiveTab} />
-        {activeTab === 'experience' && (
-          <section id="Experience">
-            <Timeline jobs={jobs} />
-          </section>
-        )}
-        {activeTab === 'projects' && (
-          <section id="Projects">
-            <Projects projects={projects} />
-          </section>
-        )}
+        <section id="Experience">
+          <h2>Experience</h2>
+          <Timeline jobs={jobs} />
+        </section>
+        <section id="Projects">
+          <Projects projects={projects} />
+        </section>
       </section>
     </>
   )

@@ -49,6 +49,7 @@
   line-height: 1.6;
   color: var(--text);
   margin-bottom: 4px;
+  text-align: left;
 }
 
 .technologies {
